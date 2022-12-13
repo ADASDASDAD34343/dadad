@@ -7,7 +7,7 @@ const app = express();
 
 
 var db;
-MongoClient.connect('mongodb://svc.gksl2.cloudtype.app:30219', function(에러, client){
+MongoClient.connect('mongodb://svc.gksl2.cloudtype.app:31722', function(에러, client){
   if (에러) return console.log(에러)
   
   db = client.db('index');
@@ -30,7 +30,7 @@ app.set('view engine', 'ejs');
 
 app.get('/1',function(요청,응답){
 
-  db.collection('de').find().toArray(function(에러 , 결과){
+  db.collection('index').find().toArray(function(에러 , 결과){
   
   console.log(결과)
   응답.render('list.ejs',{index:결과})
@@ -45,7 +45,7 @@ app.get('/1',function(요청,응답){
  
   console.log(요청.body.id)
   
-  db.collection('de').insertOne({이메일:요청.body.id,날짜:요청.body.q } ,function(에러,결과){
+  db.collection('index').insertOne({이메일:요청.body.id,날짜:요청.body.q } ,function(에러,결과){
      console.log('저장완료')
     
   })
