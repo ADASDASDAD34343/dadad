@@ -1,0 +1,19 @@
+
+<script>
+    var id = "hanlyn1110";
+    var pw = "LVC1110!lvc@";
+    var user_id = prompt("Enter your ID","");
+    var user_pw = "";
+    
+    if (id == user_id){
+        user_pw = prompt("Enter your Password","");
+        if(pw == user_pw){
+            document.write('location.href='list.ejs')
+        } else {
+            alert("The Password is incorrect");
+            location.reload();
+        }
+    } else {
+        alert("The ID is incorrect");
+    }
+    </script>
