@@ -7,7 +7,7 @@ const app = express();
 
 
 var db;
-MongoClient.connect('mongodb://svc.gksl2.cloudtype.app:31722', function(에러, client){
+MongoClient.connect('mongodb://svc.gksl2.cloudtype.app:30219', function(에러, client){
   if (에러) return console.log(에러)
   
   db = client.db('index');
