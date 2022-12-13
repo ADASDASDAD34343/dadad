@@ -44,7 +44,12 @@ app.get('/1',function(요청,응답){
  app.post('/p',function(요청,응답){
  
   console.log(요청.body.id)
-  
+   
+  var a =`
+  ${date.getFullYear()}년
+  ${date.getMonth()}월
+  ${date.getDate}
+  `
   db.collection('index').insertOne({이메일:요청.body.id,날짜:요청.body.q } ,function(에러,결과){
      console.log('저장완료')
     
