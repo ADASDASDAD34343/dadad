@@ -4,5 +4,14 @@
    "run-platform": "Google/Android",
    "server-platform": "cloudtype",
    "git-url": "https://github.com/ADASDASDAD34343/dadad.git",
-   "database-type": "MongoDB/cloudtype"
+   "database-type": "MongoDB/cloudtype",
+   "web-lang": "ejs",
+   "developer": "홍44",
+   "version": "Beta",
+   "admin-master-key-encrypted": "s3omcuu4cnio2p20293imeidoe9282fleowdojep10iewi2ml2.lynhanapps-webadmin.key",
+   "company": "Lyn Han Apps",
+   "usage": "For event app",
+   "keystore-for-google-android": "android.keystore"
 }
+   //Made by Lyn Han Apps Application Developers.
+   
