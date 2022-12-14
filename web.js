@@ -9,9 +9,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require('express-session');
 
-app.use(session({secret : '2222', resave : true, saveUninitialized: false}));
-app.use(passport.initialize());
-app.use(passport.session()); 
+
 var db;
 MongoClient.connect('mongodb://svc.gksl2.cloudtype.app:31722', function(에러, client){
   if (에러) return console.log(에러)
