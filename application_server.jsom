@@ -1,0 +1,9 @@
+{
+   "type": "application/webview",
+   "platform": "AppInventor/nb190b.ver",
+   "run-platform": "Google/Android",
+   "server-platform": "cloudtype",
+   "git-url": "https://github.com/ADASDASDAD34343/dadad.git",
+   "database-type": "MongoDB/cloudtype"
+}
+   
