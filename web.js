@@ -5,9 +5,7 @@ const MongoClient = require('mongodb').MongoClient;
 const app = express();
 
 
-const passport = require('passport');
-const LocalStrategy = require('passport-local').Strategy;
-const session = require('express-session');
+
 
 
 var db;
