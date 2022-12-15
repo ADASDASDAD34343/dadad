@@ -1,4 +1,4 @@
-let data = window.AppInventor.getWebViewString();
+
 
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
