@@ -54,7 +54,7 @@ app.get('/23/1',function(요청,응답){
         db.collection('index').insertOne({날짜:a,아이디:data} ,function(에러,결과){
     console.log('저장완료')
    console.log(data)
-          
+          )}
 
  응답.sendFile(__dirname +'/index.html')
 
