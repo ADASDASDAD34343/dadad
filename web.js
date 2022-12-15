@@ -52,14 +52,12 @@ app.get('/23/1',function(요청,응답){
   var a = new Intl.DateTimeFormat('kr').format(date);
    let t = window.AppInventor.getWebViewString();
   
-        db.collection('index').insertOne({날짜:a,아이디:t} ,function(에러,결과){
+      db.collection('index').insertOne({날짜:a,아이디:t} ,function(에러,결과){
     console.log('저장완료')
 
-          )}
+        })
 
  응답.sendFile(__dirname +'/index.html')
 
  
-
  })
- 
