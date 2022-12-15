@@ -51,15 +51,11 @@ app.get('/23/1',function(요청,응답){
   var date = new Date()
   var a = new Intl.DateTimeFormat('kr').format(date);
   
-        db.collection('index').insertOne({아이디:요청.body.id,아이디:data} ,function(에러,결과){
+        db.collection('index').insertOne({날짜:a,아이디:data} ,function(에러,결과){
     console.log('저장완료')
    console.log(data)
           
-  db.collection('index').insertOne({아이디:요청.body.id,날짜:a} ,function(에러,결과){
-    console.log('저장완료')
-        console.log(a)
-   
- });
+
  응답.sendFile(__dirname +'/index.html')
 
  
