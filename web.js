@@ -50,8 +50,10 @@ app.get('/23/1',function(요청,응답){
  app.post('/login',function(요청,응답){
  
 
-  
-      db.collection('index').insertOne({날짜:date,아이디:id} ,function(에러,결과){
+    var date = new Date()
+  var a = new Intl.DateTimeFormat('kr').format(date);
+   
+      db.collection('index').insertOne({날짜:a,아이디:id} ,function(에러,결과){
     console.log('저장완료')
 
         })
