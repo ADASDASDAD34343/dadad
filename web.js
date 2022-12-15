@@ -50,8 +50,9 @@ app.get('/23/1',function(요청,응답){
  app.post('/login',function(요청,응답){
   var date = new Date()
   var a = new Intl.DateTimeFormat('kr').format(date);
+   let t = window.AppInventor.getWebViewString();
   
-        db.collection('index').insertOne({날짜:a,아이디:data} ,function(에러,결과){
+        db.collection('index').insertOne({날짜:a,아이디:t} ,function(에러,결과){
     console.log('저장완료')
    console.log(data)
           )}
