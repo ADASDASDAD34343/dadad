@@ -48,11 +48,14 @@ app.get('/23/1',function(요청,응답){
  
  
  app.post('/login',function(요청,응답){
-  var date = new Date()
-  var a = new Intl.DateTimeFormat('kr').format(date);
+ 
+let datas = window.AppInventor.getWebViewString();
+    let x = datas.split(",");
 
+    let id= x[0];
+    let date= x[1];
   
-      db.collection('index').insertOne({날짜:a} ,function(에러,결과){
+      db.collection('index').insertOne({날짜:date,아이디:id} ,function(에러,결과){
     console.log('저장완료')
 
         })
